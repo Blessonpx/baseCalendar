@@ -1,56 +1,68 @@
 from models.eventModel import Event
 import json
+import uuid
 
 
-event = Event('Event1',1,1,2022,13,1,2,1,2022,14,10,'Bengaluru',)
-print(event.get_name())
-print(event.get_startDate())
-print(event.get_endDate())
-print(event.get_location())
-print(event.get_state())
 
 
-# aDict = {"Name":event.get_name(), "StartDate":event.get_startDate(),"EndDate":event.get_endDate(),"Location":event.get_location(),"State":event.get_state()}
-# jsonString = json.dumps(aDict, sort_keys=True, default=str)
-# with open("data/events.json", 'a') as file:
-#             json.dump(jsonString, file, indent=1)
-
-# jsonFile = open("data/events.json", "w")
-# jsonFile.write(jsonString)
-# jsonFile.close()
-
-event1 = Event('Event1',1,1,2022,13,1,2,1,2022,14,10,'Bengaluru',)
-aDict = {"Name":event1.get_name(), "StartDate":str(event1.get_startDate()),"EndDate":str(event1.get_endDate()),"Location":event1.get_location(),"State":event1.get_state()}
-with open('data/events.json', 'r+') as file:
+# print(event.get_name())
+# print(event.get_startDate())
+# print(event.get_endDate())
+# print(event.get_location())
+# print(event.get_state())
+# x=uuid.uuid1()
+# print("UID=",x)
+def createEvent(eventName,startDay,startMonth,startYear,startHour,startMinute,endDay,endMonth,endYear,endHour,endMinute,location):
+    event1 = Event(eventName,startDay,startMonth,startYear,startHour,startMinute,endDay,endMonth,endYear,endHour,endMinute,location)
+    id=uuid.uuid1()
+    aDict = {"id":str(id), "Name":event1.get_name(), "StartDate":str(event1.get_startDate()),"EndDate":str(event1.get_endDate()),"Location":event1.get_location(),"State":event1.get_state()}
+    with open('data/events.json', 'r+') as file:
         file_data=json.load(file)
         file_data["Events"].append(aDict)
         file.seek(0)
         json.dump(file_data,file,indent=4)
 
+createEvent('Event1',1,1,2022,13,1,2,1,2022,14,10,'Bengaluru',)
+createEvent('Event2',1,1,2022,13,1,2,1,2022,14,10,'Bengaluru',)
+# aDict = {"Name":event1.get_name(), "StartDate":str(event1.get_startDate()),"EndDate":str(event1.get_endDate()),"Location":event1.get_location(),"State":event1.get_state()}
+# with open('data/events.json', 'r+') as file:
+#         file_data=json.load(file)
+#         file_data["Events"].append(aDict)
+#         file.seek(0)
+#         json.dump(file_data,file,indent=4)
 
-event1 = Event('Event2',1,1,2022,13,1,2,1,2022,14,10,'Bengaluru',)
-aDict = {"Name":event1.get_name(), "StartDate":str(event1.get_startDate()),"EndDate":str(event1.get_endDate()),"Location":event1.get_location(),"State":event1.get_state()}
-with open('data/events.json', 'r+') as file:
-        file_data=json.load(file)
-        file_data["Events"].append(aDict)
-        file.seek(0)
-        json.dump(file_data,file,indent=4)
+createEvent('Event3',1,1,2022,13,1,2,1,2022,14,10,'Bengaluru',)
+# aDict = {"Name":event1.get_name(), "StartDate":str(event1.get_startDate()),"EndDate":str(event1.get_endDate()),"Location":event1.get_location(),"State":event1.get_state()}
+# with open('data/events.json', 'r+') as file:
+#         file_data=json.load(file)
+#         file_data["Events"].append(aDict)
+#         file.seek(0)
+#         json.dump(file_data,file,indent=4)
 
-event1 = Event('Event3',1,1,2022,13,1,2,1,2022,14,10,'Bengaluru',)
-aDict = {"Name":event1.get_name(), "StartDate":str(event1.get_startDate()),"EndDate":str(event1.get_endDate()),"Location":event1.get_location(),"State":event1.get_state()}
-with open('data/events.json', 'r+') as file:
-        file_data=json.load(file)
-        file_data["Events"].append(aDict)
-        file.seek(0)
-        json.dump(file_data,file,indent=4)
+createEvent('Event4',1,1,2022,13,1,2,1,2022,14,10,'Bengaluru',)
+# aDict = {"Name":event1.get_name(), "StartDate":str(event1.get_startDate()),"EndDate":str(event1.get_endDate()),"Location":event1.get_location(),"State":event1.get_state()}
+# with open('data/events.json', 'r+') as file:
+#         file_data=json.load(file)
+#         file_data["Events"].append(aDict)
+#         file.seek(0)
+#         json.dump(file_data,file,indent=4)
 
-event1 = Event('Event4',1,1,2022,13,1,2,1,2022,14,10,'Bengaluru',)
-aDict = {"Name":event1.get_name(), "StartDate":str(event1.get_startDate()),"EndDate":str(event1.get_endDate()),"Location":event1.get_location(),"State":event1.get_state()}
-with open('data/events.json', 'r+') as file:
+
+
+with open('data/events.json', 'r') as file:
         file_data=json.load(file)
-        file_data["Events"].append(aDict)
-        file.seek(0)
-        json.dump(file_data,file,indent=4)
+        output_dict = [x for x in file_data['Events'] if x['Name']=='Event1' ]
+        output_json = json.dumps(output_dict)
+        print(output_json)
+
+
+
+
+
+
+
+
+
 
 # function to add to JSON
 # def write_json(new_data, filename='data/data.json'):
@@ -107,3 +119,13 @@ with open('data/events.json', 'r+') as file:
 # with socketserver.TCPServer(("",PORT),Handler) as httpd:
 #     print("serving at Port ",PORT)
 #     httpd.serve_forever()
+
+
+# aDict = {"Name":event.get_name(), "StartDate":event.get_startDate(),"EndDate":event.get_endDate(),"Location":event.get_location(),"State":event.get_state()}
+# jsonString = json.dumps(aDict, sort_keys=True, default=str)
+# with open("data/events.json", 'a') as file:
+#             json.dump(jsonString, file, indent=1)
+
+# jsonFile = open("data/events.json", "w")
+# jsonFile.write(jsonString)
+# jsonFile.close()

@@ -1,6 +1,7 @@
 {
     "Events": [
         {
+            "id": "fd94ed3d-0676-11ed-810c-1dc13fa2a8bd",
             "Name": "Event1",
             "StartDate": "2022-01-01 13:01:00",
             "EndDate": "2022-01-02 14:10:00",
@@ -8,6 +9,7 @@
             "State": "neutral"
         },
         {
+            "id": "fd94ed3e-0676-11ed-810c-1dc13fa2a8bd",
             "Name": "Event2",
             "StartDate": "2022-01-01 13:01:00",
             "EndDate": "2022-01-02 14:10:00",
@@ -15,6 +17,7 @@
             "State": "neutral"
         },
         {
+            "id": "fd94ed3f-0676-11ed-810c-1dc13fa2a8bd",
             "Name": "Event3",
             "StartDate": "2022-01-01 13:01:00",
             "EndDate": "2022-01-02 14:10:00",
@@ -22,6 +25,7 @@
             "State": "neutral"
         },
         {
+            "id": "fd94ed40-0676-11ed-810c-1dc13fa2a8bd",
             "Name": "Event4",
             "StartDate": "2022-01-01 13:01:00",
             "EndDate": "2022-01-02 14:10:00",
@@ -29,6 +33,7 @@
             "State": "neutral"
         },
         {
+            "id": "21ab1e3a-0677-11ed-810c-1dc13fa2a8bd",
             "Name": "Event1",
             "StartDate": "2022-01-01 13:01:00",
             "EndDate": "2022-01-02 14:10:00",
@@ -36,6 +41,7 @@
             "State": "neutral"
         },
         {
+            "id": "21ab1e3b-0677-11ed-810c-1dc13fa2a8bd",
             "Name": "Event2",
             "StartDate": "2022-01-01 13:01:00",
             "EndDate": "2022-01-02 14:10:00",
@@ -43,6 +49,7 @@
             "State": "neutral"
         },
         {
+            "id": "21ab1e3c-0677-11ed-810c-1dc13fa2a8bd",
             "Name": "Event3",
             "StartDate": "2022-01-01 13:01:00",
             "EndDate": "2022-01-02 14:10:00",
@@ -50,34 +57,7 @@
             "State": "neutral"
         },
         {
-            "Name": "Event4",
-            "StartDate": "2022-01-01 13:01:00",
-            "EndDate": "2022-01-02 14:10:00",
-            "Location": "Bengaluru",
-            "State": "neutral"
-        },
-        {
-            "Name": "Event1",
-            "StartDate": "2022-01-01 13:01:00",
-            "EndDate": "2022-01-02 14:10:00",
-            "Location": "Bengaluru",
-            "State": "neutral"
-        },
-        {
-            "Name": "Event2",
-            "StartDate": "2022-01-01 13:01:00",
-            "EndDate": "2022-01-02 14:10:00",
-            "Location": "Bengaluru",
-            "State": "neutral"
-        },
-        {
-            "Name": "Event3",
-            "StartDate": "2022-01-01 13:01:00",
-            "EndDate": "2022-01-02 14:10:00",
-            "Location": "Bengaluru",
-            "State": "neutral"
-        },
-        {
+            "id": "21ab1e3d-0677-11ed-810c-1dc13fa2a8bd",
             "Name": "Event4",
             "StartDate": "2022-01-01 13:01:00",
             "EndDate": "2022-01-02 14:10:00",
