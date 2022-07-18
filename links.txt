@@ -1,0 +1,5 @@
+https://stackoverflow.com/questions/58183565/how-to-pass-parameter-to-get-handler-method-of-basehttprequesthandler-class-in-p
+https://stackoverflow.com/questions/18444395/basehttprequesthandler-with-custom-instance
+https://docs.python.org/3/library/http.server.html#http.server.SimpleHTTPRequestHandler
+https://github.com/python/cpython/blob/3.10/Lib/http/server.py
+https://pymotw.com/3/http.server/
