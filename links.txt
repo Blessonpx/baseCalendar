@@ -3,3 +3,4 @@ https://stackoverflow.com/questions/18444395/basehttprequesthandler-with-custom-
 https://docs.python.org/3/library/http.server.html#http.server.SimpleHTTPRequestHandler
 https://github.com/python/cpython/blob/3.10/Lib/http/server.py
 https://pymotw.com/3/http.server/
+https://stackoverflow.com/questions/54621477/sending-json-object-to-function-python

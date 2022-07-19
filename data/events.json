@@ -55,14 +55,6 @@
             "EndDate": "2022-01-02 14:10:00",
             "Location": "Bengaluru",
             "State": "neutral"
-        },
-        {
-            "id": "21ab1e3d-0677-11ed-810c-1dc13fa2a8bd",
-            "Name": "Event4",
-            "StartDate": "2022-01-01 13:01:00",
-            "EndDate": "2022-01-02 14:10:00",
-            "Location": "Bengaluru",
-            "State": "neutral"
         }
     ]
 }
